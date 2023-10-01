@@ -2,6 +2,14 @@
   background-color: $bg_main;
 }
 
+.bg__container {
+  background-color: $color_blue;
+}
+
+.font__poppins {
+  font-family: "Poppins", sans-serif;
+}
+
 .social__item {
   background-color: white;
   color: $color_blue;
@@ -12,4 +20,40 @@
     border-color: white;
     color: white;
   }
+}
+
+.button__cv {
+  border: 2px solid $color_orange;
+  background-color: $color_orange;
+  transition: all 0.5s ease;
+  &:hover {
+    border-color: white;
+    background-color: white;
+    color: $color_orange;
+  }
+}
+
+.button__github {
+  border: 2px solid white;
+  background-color: white;
+  color: $color_orange;
+  transition: all 0.5s ease;
+  &:hover {
+    border-color: $color_orange;
+    background-color: $color_orange;
+    color: white;
+  }
+}
+
+.overlay-bg {
+  background-image: url("/background-home.png");
+  background-size: contain;
+  background-position: right center;
+  position: absolute;
+  top: 50%;
+  right: -4rem;
+  width: 70%;
+  height: 70%;
+  opacity: 0.1;
+  transform: translateY(-50%);
 }

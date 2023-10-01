@@ -8,7 +8,7 @@ import { AiOutlineAppstore } from "react-icons/ai";
 export const Header = () => {
   return (
     <>
-      <header className="w-96 bg-[#4a63e7] rounded-xl p-10 shadow-lg text-white flex flex-col justify-between">
+      <header className="w-96 bg__container rounded-xl p-10 shadow-lg text-white flex flex-col justify-between">
         <div>
           <div className="flex flex-col items-center gap-3">
             <h1 className="font-extrabold uppercase text-2xl">
