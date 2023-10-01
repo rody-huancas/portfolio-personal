@@ -29,14 +29,14 @@
   &:hover {
     border-color: white;
     background-color: white;
-    color: $color_orange;
+    color: black;
   }
 }
 
 .button__github {
   border: 2px solid white;
   background-color: white;
-  color: $color_orange;
+  color: black;
   transition: all 0.5s ease;
   &:hover {
     border-color: $color_orange;
@@ -56,4 +56,10 @@
   height: 70%;
   opacity: 0.1;
   transform: translateY(-50%);
+}
+
+.item__menu-active {
+  border-left: 0.3rem solid $color_orange;
+  padding-left: 0.5rem;
+  transition: border-left 0.3s ease, padding-left 0.3s ease-in-out;
 }

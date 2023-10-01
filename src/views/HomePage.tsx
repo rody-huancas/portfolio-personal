@@ -1,3 +1,7 @@
+//iconos
+import { HiOutlineDocumentText } from "react-icons/hi";
+import { RiGithubFill } from "react-icons/ri";
+
 export const HomePage = () => {
   return (
     <>
@@ -15,13 +19,15 @@ export const HomePage = () => {
           </p>
 
           <div className="flex items-center gap-5">
-            <button className="px-8 py-2 rounded-lg button__cv font-medium cursor-pointer">
+            <button className="px-8 py-2 rounded-lg button__cv font-medium cursor-pointer flex items-center gap-2">
+              <HiOutlineDocumentText />
               Descargar CV
             </button>
             <a
               href=""
-              className="px-8 py-2 rounded-lg button__github font-medium cursor-pointer"
+              className="px-8 py-2 rounded-lg button__github font-medium cursor-pointer flex items-center gap-2"
             >
+              <RiGithubFill />
               GitHub
             </a>
           </div>

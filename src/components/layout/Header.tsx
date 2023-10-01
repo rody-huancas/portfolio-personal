@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 // Componentes
 import { Footer } from "./Footer";
 // Iconos
@@ -6,6 +6,7 @@ import { RiHomeLine, RiUserLine, RiMessage3Line } from "react-icons/ri";
 import { AiOutlineAppstore } from "react-icons/ai";
 
 export const Header = () => {
+  const location = useLocation();
   return (
     <>
       <header className="w-96 bg__container rounded-xl p-10 shadow-lg text-white flex flex-col justify-between">
@@ -21,21 +22,39 @@ export const Header = () => {
           {/* Menú */}
           <nav className="my-10">
             <ul className="flex flex-col gap-4 font-medium">
-              <li className="flex items-center gap-3">
+              <li
+                className={`flex items-center gap-3 ${
+                  location.pathname === "/" ? "item__menu-active" : ""
+                }`}
+              >
                 <RiHomeLine />
-                <Link to="/">Inicio</Link>
+                <NavLink to="/" className="transition-all duration-500">
+                  Inicio
+                </NavLink>
               </li>
-              <li className="flex items-center gap-3">
+              <li
+                className={`flex items-center gap-3 ${
+                  location.pathname === "/about" ? "item__menu-active" : ""
+                }`}
+              >
                 <RiUserLine />
-                <Link to="/about">Sobre Mí</Link>
+                <NavLink to="/about">Sobre Mí</NavLink>
               </li>
-              <li className="flex items-center gap-3">
+              <li
+                className={`flex items-center gap-3 ${
+                  location.pathname === "/projects" ? "item__menu-active" : ""
+                }`}
+              >
                 <AiOutlineAppstore />
-                <Link to="/projects">Proyectos</Link>
+                <NavLink to="/projects">Proyectos</NavLink>
               </li>
-              <li className="flex items-center gap-3">
+              <li
+                className={`flex items-center gap-3 ${
+                  location.pathname === "/contact" ? "item__menu-active" : ""
+                }`}
+              >
                 <RiMessage3Line />
-                <Link to="/contact">Contacto</Link>
+                <NavLink to="/contact">Contacto</NavLink>
               </li>
             </ul>
           </nav>
