@@ -1,3 +1,15 @@
 .bg_main {
   background-color: $bg_main;
 }
+
+.social__item {
+  background-color: white;
+  color: $color_blue;
+  border: 2px solid $color_blue;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+  }
+}
