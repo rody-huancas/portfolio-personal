@@ -1,7 +1,9 @@
+import { AboutPage } from "@views";
+
 export const About = () => {
   return (
     <>
-      <div>About</div>
+      <AboutPage />
     </>
   );
 };

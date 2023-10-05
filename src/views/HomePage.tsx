@@ -5,27 +5,26 @@ import { RiGithubFill } from "react-icons/ri";
 export const HomePage = () => {
   return (
     <>
-      <div className="relative w-full h-full bg__container rounded-xl flex items-center justify-center">
+      <div className="relative w-full h-full bg__container p-5 md:p-0 rounded-xl flex items-center justify-center overflow-x-hidden">
         <div className="overlay-bg"></div>
-        <div className="flex flex-col items-start justify-center gap-7 px-24 text-gray-100 z-40">
-          <h2 className="font-extrabold text-6xl font__poppins">
+        <div className="flex flex-col items-start justify-center gap-7 p-5 md:px-10 lg:px-20 text-gray-100 z-40">
+          <h2 className="font-extrabold text-6xl text-center md:text-left">
             Soy <span className="text-white">Rody Huancas</span>
             <small className="text-[#ff5959]">.</small>
           </h2>
-          <p className="text-xl">
-            Soy un desarrollador web Full Stack con experiencia en el desarrollo
-            web, apasionado por el aprendizaje autodidacta y la aplicación
-            práctica de nuevas tecnologías.
+          <p className="text-lg">
+            Un desarrollador Full Stack apasionado por la tecnología. Transformo
+            ideas en realidad a través del código. ¡Bienvenido a mi portafolio!
           </p>
 
-          <div className="flex items-center gap-5">
-            <button className="px-8 py-2 rounded-lg button__cv font-medium cursor-pointer flex items-center gap-2">
+          <div className="w-full flex flex-col sm:flex-row items-center gap-5">
+            <button className="w-full md:w-auto px-8 py-2.5 rounded-full button__cv font-medium cursor-pointer flex items-center justify-center gap-2">
               <HiOutlineDocumentText />
               Descargar CV
             </button>
             <a
               href=""
-              className="px-8 py-2 rounded-lg button__github font-medium cursor-pointer flex items-center gap-2"
+              className="w-full md:w-auto px-8 py-2.5 rounded-full button__github font-medium cursor-pointer flex items-center justify-center gap-2"
             >
               <RiGithubFill />
               GitHub

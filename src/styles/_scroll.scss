@@ -1,0 +1,15 @@
+.scrollable {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 5rem;
+    background: white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 0.25rem;
+  }
+}

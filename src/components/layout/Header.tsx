@@ -1,15 +1,29 @@
+import { useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";
 // Componentes
 import { Footer } from "./Footer";
 // Iconos
-import { RiHomeLine, RiUserLine, RiMessage3Line } from "react-icons/ri";
+import {
+  RiHomeLine,
+  RiUserLine,
+  RiMessage3Line,
+  RiMenu4Line,
+} from "react-icons/ri";
 import { AiOutlineAppstore } from "react-icons/ai";
 
 export const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
   const location = useLocation();
+
+  const onClickShowMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <>
-      <header className="w-96 bg__container rounded-xl p-10 shadow-lg text-white flex flex-col justify-between">
+      <header
+        className={`lg:w-96 bg__container rounded-xl p-10 shadow-lg text-white flex flex-col justify-between`}
+      >
         <div>
           <div className="flex flex-col items-center gap-3">
             <h1 className="font-extrabold uppercase text-2xl">
@@ -63,6 +77,10 @@ export const Header = () => {
         {/* Footer */}
         <Footer />
       </header>
+
+      <button className="button__menu md:hidden" onClick={onClickShowMenu}>
+        <RiMenu4Line />
+      </button>
     </>
   );
 };
