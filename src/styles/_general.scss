@@ -6,8 +6,16 @@
   background-color: $color_blue;
 }
 
+.bg__orange {
+  background-color: $color_orange;
+}
+
 .text__container {
   color: $color_blue;
+}
+
+.text__orange {
+  color: $color_orange;
 }
 
 .font__poppins {
@@ -18,6 +26,15 @@
   content: "";
   display: block;
   width: 3rem;
+  border-bottom: 0.4rem solid $color_blue;
+  border-radius: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.subtitle__page::after {
+  content: "";
+  display: block;
+  width: 5rem;
   border-bottom: 0.4rem solid $color_blue;
   border-radius: 0.5rem;
   margin-top: 0.3rem;

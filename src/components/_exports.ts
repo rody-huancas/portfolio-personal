@@ -7,3 +7,6 @@ export * from "./buttons/ButtonSkill";
 
 // Tabs
 export * from "./tabs/Tab";
+
+// Card
+export * from "./cards/CardProject";

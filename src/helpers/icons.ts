@@ -1,9 +1,4 @@
-import {
-  RiHtml5Fill,
-  RiCss3Fill,
-  RiBootstrapLine,
-  RiReactjsLine,
-} from "react-icons/ri";
+import { RiHtml5Fill, RiCss3Fill, RiReactjsLine } from "react-icons/ri";
 import {
   SiTailwindcss,
   SiTypescript,
@@ -28,12 +23,11 @@ import {
 } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
-import { BsGit, BsGithub, BsTrello } from "react-icons/bs";
+import { BsGit, BsGithub, BsTrello, BsBootstrapFill } from "react-icons/bs";
 
 export const icons = {
   RiHtml5Fill,
   RiCss3Fill,
-  RiBootstrapLine,
   RiReactjsLine,
   SiTailwindcss,
   SiTypescript,
@@ -58,4 +52,5 @@ export const icons = {
   BsGit,
   BsGithub,
   BsTrello,
+  BsBootstrapFill,
 };

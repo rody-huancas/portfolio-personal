@@ -15,7 +15,7 @@ export const Tab = () => {
     <>
       <div className="flex flex-wrap">
         <div className="w-full">
-          <div className="grid grid-cols-5 gap-3">
+          <div className="grid grid__tabs gap-3">
             <button
               className={
                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
@@ -91,7 +91,7 @@ export const Tab = () => {
                     <ButtonSkill Icon={icons.RiCss3Fill} text="Css" />
                     <ButtonSkill Icon={icons.FaSass} text="Sass" />
                     <ButtonSkill
-                      Icon={icons.RiBootstrapLine}
+                      Icon={icons.BsBootstrapFill}
                       text="Bootstrap"
                     />
                     <ButtonSkill Icon={icons.SiTailwindcss} text="Tailwind" />
@@ -140,10 +140,10 @@ export const Tab = () => {
                 </div>
                 <div className={openTab === 5 ? "block" : "hidden"}>
                   <div className="grid__buttons">
-                    <ButtonSkill Icon={icons.FaDocker} text="Docker" />
-                    <ButtonSkill Icon={icons.SiPostman} text="Postman" />
                     <ButtonSkill Icon={icons.BsGit} text="Git" />
                     <ButtonSkill Icon={icons.BsGithub} text="GitHub" />
+                    <ButtonSkill Icon={icons.FaDocker} text="Docker" />
+                    <ButtonSkill Icon={icons.SiPostman} text="Postman" />
                     <ButtonSkill Icon={icons.BsTrello} text="Trello" />
                   </div>
                 </div>
