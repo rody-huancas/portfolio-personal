@@ -6,78 +6,12 @@
   background-color: $color_blue;
 }
 
+.text__container {
+  color: $color_blue;
+}
+
 .font__poppins {
   font-family: "Poppins", sans-serif;
-}
-
-.social__item {
-  background-color: white;
-  color: $color_blue;
-  border: 2px solid $color_blue;
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: transparent;
-    border-color: white;
-    color: white;
-  }
-}
-
-.button__cv {
-  border: 2px solid $color_orange;
-  background-color: $color_orange;
-  transition: all 0.5s ease;
-  &:hover {
-    border-color: white;
-    background-color: white;
-    color: black;
-  }
-}
-
-.button__github {
-  border: 2px solid white;
-  background-color: transparent;
-  color: white;
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-}
-
-.overlay-bg {
-  background-image: url("/background-home.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right center;
-  position: absolute;
-  top: 50%;
-  right: -4rem;
-  width: 70%;
-  height: 70%;
-  opacity: 0.1;
-  transform: translateY(-50%);
-}
-
-.item__menu-active {
-  border-left: 0.3rem solid $color_orange;
-  padding-left: 0.5rem;
-  transition: border-left 0.3s ease, padding-left 0.3s ease-in-out;
-}
-
-.button__menu {
-  background-color: $color_blue;
-  color: white;
-  padding: 0.5rem;
-  width: 2.2rem;
-  height: 2.2rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid white;
-  position: fixed;
-  top: 2rem;
-  z-index: 99;
 }
 
 .title__page::after {
@@ -87,40 +21,4 @@
   border-bottom: 0.4rem solid $color_blue;
   border-radius: 0.5rem;
   margin-top: 0.3rem;
-}
-
-.grid__buttons {
-  display: grid;
-  place-items: center;
-  gap: 1rem;
-}
-
-@media (min-width: 400px) {
-  .grid__buttons {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 600px) {
-  .grid__buttons {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 759px) {
-  .grid__buttons {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1030px) {
-  .grid__buttons {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1200px) {
-  .grid__buttons {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }

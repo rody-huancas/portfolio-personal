@@ -1,0 +1,47 @@
+.social__item {
+  background-color: white;
+  color: $color_blue;
+  border: 2px solid $color_blue;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+  }
+}
+
+.button__cv {
+  border: 2px solid $color_orange;
+  background-color: $color_orange;
+  transition: all 0.5s ease;
+  &:hover {
+    border-color: white;
+    background-color: white;
+    color: black;
+  }
+}
+
+.button__github {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.overlay-bg {
+  background-image: url("/background-home.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  position: absolute;
+  top: 50%;
+  right: -4rem;
+  width: 70%;
+  height: 70%;
+  opacity: 0.1;
+  transform: translateY(-50%);
+}

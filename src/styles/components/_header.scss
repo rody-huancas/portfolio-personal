@@ -1,0 +1,21 @@
+.item__menu-active {
+  border-left: 0.3rem solid $color_orange;
+  padding-left: 0.5rem;
+  transition: border-left 0.3s ease, padding-left 0.3s ease-in-out;
+}
+
+.button__menu {
+  background-color: $color_blue;
+  color: white;
+  padding: 0.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  position: fixed;
+  top: 2rem;
+  z-index: 99;
+}

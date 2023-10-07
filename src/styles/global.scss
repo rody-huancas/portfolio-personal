@@ -4,3 +4,10 @@
 @import "_colors.scss";
 @import "_general.scss";
 @import "_scroll.scss";
+
+// paginas
+@import "./pages/about.scss";
+
+// Componentes
+@import "./pages/home.scss";
+@import "./components/header.scss";

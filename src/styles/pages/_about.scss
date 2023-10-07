@@ -1,0 +1,35 @@
+.grid__buttons {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 400px) {
+  .grid__buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 600px) {
+  .grid__buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 759px) {
+  .grid__buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1030px) {
+  .grid__buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid__buttons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

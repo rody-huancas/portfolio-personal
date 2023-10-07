@@ -4,3 +4,6 @@ export * from "./layout/Footer";
 
 // Buttons
 export * from "./buttons/ButtonSkill";
+
+// Tabs
+export * from "./tabs/Tab";

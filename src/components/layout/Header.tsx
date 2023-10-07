@@ -22,7 +22,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`lg:w-96 bg__container rounded-xl p-10 shadow-lg text-white flex flex-col justify-between`}
+        className={`lg:w-96 bg__container rounded-xl py-10 px-8 shadow-lg text-white flex flex-col justify-between`}
       >
         <div>
           <div className="flex flex-col items-center gap-3">
