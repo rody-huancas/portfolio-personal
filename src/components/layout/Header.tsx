@@ -19,10 +19,20 @@ export const Header = () => {
     setShowMenu(!showMenu);
   };
 
+  // Manejador de clic para ocultar el menú
+  const onClickNavLink = () => {
+    setShowMenu(false);
+  };
+
   return (
     <>
       <header
-        className={`lg:w-96 bg__container rounded-xl py-10 px-8 shadow-lg text-white flex flex-col justify-between`}
+        className={`lg:w-96 bg__container rounded-xl py-10 px-8 shadow-lg text-white md:flex flex-col justify-between ${
+          showMenu ? "header__top" : "hidden"
+        }`}
+        style={{
+          animation: showMenu ? "slideIn 0.3s ease-in-out" : "",
+        }}
       >
         <div>
           <div className="flex flex-col items-center gap-3">
@@ -42,7 +52,11 @@ export const Header = () => {
                 }`}
               >
                 <RiHomeLine />
-                <NavLink to="/" className="transition-all duration-500">
+                <NavLink
+                  to="/"
+                  className="transition-all duration-500"
+                  onClick={onClickNavLink}
+                >
                   Inicio
                 </NavLink>
               </li>
@@ -52,7 +66,9 @@ export const Header = () => {
                 }`}
               >
                 <RiUserLine />
-                <NavLink to="/about">Sobre Mí</NavLink>
+                <NavLink to="/about" onClick={onClickNavLink}>
+                  Sobre Mí
+                </NavLink>
               </li>
               <li
                 className={`flex items-center gap-3 ${
@@ -60,7 +76,9 @@ export const Header = () => {
                 }`}
               >
                 <AiOutlineAppstore />
-                <NavLink to="/projects">Proyectos</NavLink>
+                <NavLink to="/projects" onClick={onClickNavLink}>
+                  Proyectos
+                </NavLink>
               </li>
               <li
                 className={`flex items-center gap-3 ${
@@ -68,7 +86,9 @@ export const Header = () => {
                 }`}
               >
                 <RiMessage3Line />
-                <NavLink to="/contact">Contacto</NavLink>
+                <NavLink to="/contact" onClick={onClickNavLink}>
+                  Contacto
+                </NavLink>
               </li>
             </ul>
           </nav>
@@ -78,7 +98,14 @@ export const Header = () => {
         <Footer />
       </header>
 
-      <button className="button__menu md:hidden" onClick={onClickShowMenu}>
+      <button
+        className={`button__menu md:hidden border-2 ${
+          !showMenu
+            ? "bg-blue-700 text-white border-white"
+            : "bg-white text-blue-700 border-white"
+        }`}
+        onClick={onClickShowMenu}
+      >
         <RiMenu4Line />
       </button>
     </>

@@ -9,17 +9,10 @@ export const ProjectPage = () => {
         <div className="grid__projects">
           <CardProject
             image="https://i.postimg.cc/6qsTpYkj/ecommerce.gif"
-            name="Ecommerce Datec - (en desarrollo)"
+            name="Ecommerce Datec"
             github=""
             project="https://datec-ecommerce.netlify.app/"
-            technologies={[
-              "JavaScript",
-              "TypeScript",
-              "React",
-              "Sass",
-              "Tailwind",
-              "Axios",
-            ]}
+            technologies={["AÚN ESTÁ EN EN DESARROLLO"]}
           />
           <CardProject
             image="https://i.postimg.cc/8C8FrJGX/Trail-Flix.gif"
