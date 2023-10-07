@@ -82,7 +82,7 @@ export const Tab = () => {
             </button>
           </div>
 
-          <div className="flex flex-col bg__container text-white w-full mb-6 mt-5 p-5 rounded-lg shadow-md overflow-x-hidden">
+          <div className="flex flex-col bg__container text-white w-full mb-6 mt-5 py-5 px-2 rounded-lg shadow-md overflow-x-hidden">
             <div className="px-2 py-5 flex-auto">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"}>

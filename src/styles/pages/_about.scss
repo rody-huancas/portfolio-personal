@@ -4,7 +4,7 @@
   gap: 1rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 485px) {
   .grid__buttons,
   .grid__tabs {
     grid-template-columns: repeat(2, 1fr);
