@@ -10,3 +10,6 @@ export * from "./tabs/Tab";
 
 // Card
 export * from "./cards/CardProject";
+
+//Forms
+export * from "./forms/FormContact";

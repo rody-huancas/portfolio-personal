@@ -19,7 +19,6 @@ export const Header = () => {
     setShowMenu(!showMenu);
   };
 
-  // Manejador de clic para ocultar el menú
   const onClickNavLink = () => {
     setShowMenu(false);
   };

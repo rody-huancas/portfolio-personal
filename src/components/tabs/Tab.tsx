@@ -118,13 +118,13 @@ export const Tab = () => {
                 <div className={openTab === 3 ? "block" : "hidden"}>
                   <div className="grid__buttons">
                     <ButtonSkill
-                      Icon={icons.SiMicrosoftsqlserver}
+                      Icon={icons.BiLogoPostgresql}
                       text="Postgres"
                     />
                     <ButtonSkill Icon={icons.GrMysql} text="MySQL" />
                     <ButtonSkill Icon={icons.SiMongodb} text="MongoDB" />
                     <ButtonSkill
-                      Icon={icons.BiLogoPostgresql}
+                      Icon={icons.SiMicrosoftsqlserver}
                       text="SQL Server"
                     />
                   </div>

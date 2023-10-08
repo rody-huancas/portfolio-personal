@@ -1,0 +1,22 @@
+.input__contact {
+  border: 1px solid $color_gray;
+  padding: 0.7rem 1.3rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  transition: border-color 0.3s ease-in-out;
+
+  &:focus {
+    border-color: $color_orange;
+    outline: none;
+  }
+}
+
+.button__submit {
+  background-color: $color_orange;
+  transform: translateY(0);
+
+  &:hover {
+    background-color: $color_blue;
+    transform: translateY(-5px);
+  }
+}

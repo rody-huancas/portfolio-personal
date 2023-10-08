@@ -4,7 +4,9 @@ export const ProjectPage = () => {
   return (
     <>
       <div className="h-full p-10 flex flex-col gap-7 overflow-y-scroll text-gray-700 scrollable">
-        <h2 className="font-black text-3xl title__page">Mis Proyectos</h2>
+        <h2 className="font-black text-3xl title__page font__poppins">
+          Mis Proyectos
+        </h2>
 
         <div className="grid__projects">
           <CardProject

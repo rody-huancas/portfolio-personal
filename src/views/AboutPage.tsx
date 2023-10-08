@@ -5,7 +5,9 @@ export const AboutPage = () => {
   return (
     <>
       <div className="h-full p-10 flex flex-col gap-5 overflow-y-scroll text-gray-700 scrollable">
-        <h2 className="font-black text-3xl title__page">Sobre Mí</h2>
+        <h2 className="font-black text-3xl title__page font__poppins">
+          Sobre Mí
+        </h2>
 
         <div className="mt-3 flex flex-col gap-2">
           <span className="text-xl font-bold">Hola!,</span>
