@@ -10,28 +10,28 @@ export const Footer = () => {
     <footer className="flex flex-col gap-5">
       <div className="flex items-center justify-center gap-3">
         <a
-          href=""
+          href="https://www.facebook.com/rody.huancaschuquipoma.7"
           target="_blank"
           className="rounded-full p-2 cursor-pointer social__item"
         >
           <RiFacebookFill />
         </a>
         <a
-          href=""
+          href="https://www.instagram.com/rody.huancas/"
           target="_blank"
           className="rounded-full p-2  cursor-pointer social__item"
         >
           <RiInstagramLine />
         </a>
         <a
-          href=""
+          href="https://twitter.com/rodyhuancas"
           target="_blank"
           className="rounded-full p-2 cursor-pointer social__item"
         >
           <RiTwitterXLine />
         </a>
         <a
-          href=""
+          href="https://www.linkedin.com/in/rody-huancas/"
           target="_blank"
           className="rounded-full p-2 cursor-pointer social__item"
         >

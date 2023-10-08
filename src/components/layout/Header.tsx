@@ -44,7 +44,7 @@ export const Header = () => {
 
           {/* Menú */}
           <nav className="my-10">
-            <ul className="flex flex-col gap-4 font-medium">
+            <ul className="flex flex-col gap-6 md:gap-4 font-medium">
               <li
                 className={`flex items-center gap-3 ${
                   location.pathname === "/" ? "item__menu-active" : ""

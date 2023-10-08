@@ -6,11 +6,11 @@ import { RiUserLocationLine } from "react-icons/ri";
 export const ContactPage = () => {
   return (
     <>
-      <div className="h-full p-10 flex flex-col gap-5 text-gray-700 font__poppins">
+      <div className="h-full p-10 flex flex-col gap-5 text-gray-700 font__poppins overflow-x-hidden">
         <h2 className="font-black text-3xl title__page">Contáctame</h2>
 
-        <div className="h-full flex items-center gap-12">
-          <div className="h-3/4 flex flex-col gap-8">
+        <div className="h-full flex-col md:flex-row flex sm:items-center gap-12">
+          <div className="lg:h-3/4 flex flex-wrap xl:flex-col gap-8">
             <div className="flex items-center gap-3 text-xl text__orange">
               <BiPhoneCall />
               <p className="flex flex-col text-base font-bold text-gray-700">
@@ -22,9 +22,7 @@ export const ContactPage = () => {
               <GrMail />
               <p className="flex flex-col text-base font-bold text-gray-700">
                 Correo Electrónico
-                <span className="font-normal text-sm">
-                  rody.huancas04@gmail.com
-                </span>
+                <span className="font-normal text-sm">huancasr9@gmail.com</span>
               </p>
             </div>
             <div className="flex items-center gap-3 text-xl text__orange">

@@ -113,6 +113,7 @@ export const Tab = () => {
                     />
                     <ButtonSkill Icon={icons.FaNodeJs} text="Node.js" />
                     <ButtonSkill Icon={icons.SiExpress} text="Express.js" />
+                    <ButtonSkill Icon={icons.SiStrapi} text="Strapi" />
                   </div>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"}>

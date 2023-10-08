@@ -1,12 +1,13 @@
 import { BsFillSendFill } from "react-icons/bs";
 
 export const FormContact = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+  };
+
   return (
-    <form className="flex flex-col gap-4">
-      {/* <h4 className="font-medium text-gray-700">
-        Déjame saber cómo puedo ayudarte!
-      </h4> */}
-      <div className="grid grid-cols-2 gap-4">
+    <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+      <div className="grid gap-4 form__group">
         <input type="text" placeholder="Tu nombre" className="input__contact" />
         <input
           type="text"
@@ -22,7 +23,7 @@ export const FormContact = () => {
 
       <button
         type="submit"
-        className="w-52 flex items-center justify-center gap-2 bg__orange text-white py-3 rounded-full font-medium button__submit transition-all duration-500 ease-in-out"
+        className="w-52 flex items-center justify-center gap-2 mb-5 sm:mb-0 bg__orange text-white py-3 rounded-full font-medium button__submit transition-all duration-500 ease-in-out"
       >
         <BsFillSendFill /> Enviar Mensaje
       </button>

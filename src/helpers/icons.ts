@@ -12,6 +12,7 @@ import {
   SiMicrosoftsqlserver,
   SiAdobephotoshop,
   SiPostman,
+  SiStrapi,
 } from "react-icons/si";
 import {
   FaSass,
@@ -41,6 +42,7 @@ export const icons = {
   SiMicrosoftsqlserver,
   SiAdobephotoshop,
   SiPostman,
+  SiStrapi,
   FaSass,
   FaPython,
   FaLaravel,

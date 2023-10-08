@@ -18,12 +18,17 @@ export const HomePage = () => {
           </p>
 
           <div className="w-full flex flex-col sm:flex-row items-center gap-5">
-            <button className="w-full md:w-auto px-8 py-2.5 rounded-full button__cv font-medium cursor-pointer flex items-center justify-center gap-2">
+            <a
+              href="/cv-rody-huancas.pdf"
+              download
+              className="w-full md:w-auto px-8 py-2.5 rounded-full button__cv font-medium cursor-pointer flex items-center justify-center gap-2"
+            >
               <HiOutlineDocumentText />
               Descargar CV
-            </button>
+            </a>
             <a
-              href=""
+              href="https://github.com/rody-huancas"
+              target="_blank"
               className="w-full md:w-auto px-8 py-2.5 rounded-full button__github font-medium cursor-pointer flex items-center justify-center gap-2"
             >
               <RiGithubFill />
