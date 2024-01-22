@@ -26,12 +26,9 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`lg:w-96 bg-secondary-100 rounded-xl py-10 px-8 shadow-lg text-white md:flex flex-col justify-between ${
-          showMenu ? "header__top" : "hidden"
+        className={`md:w-96 bg-secondary-100 md:rounded-xl py-10 px-8 shadow-lg text-white md:flex flex-col justify-between transition-all duration-300 fixed md:left-0 md:static top-0 z-50 w-full h-screen md:h-auto rounded-none ${
+          showMenu ? "left-0" : "-left-full"
         }`}
-        style={{
-          animation: showMenu ? "slideIn 0.3s ease-in-out" : "",
-        }}
       >
         <div>
           <div className="flex flex-col items-center gap-3">
@@ -46,21 +43,17 @@ export const Header = () => {
           <nav className="my-10">
             <ul className="flex flex-col gap-6 md:gap-4 font-medium">
               <li
-                className={`flex items-center gap-3 ${
+                className={`flex items-center gap-3 transition-all duration-300 ease-in-out ${
                   location.pathname === "/" ? "item__menu-active" : ""
                 }`}
               >
                 <RiHomeLine />
-                <NavLink
-                  to="/"
-                  className="transition-all duration-500"
-                  onClick={onClickNavLink}
-                >
+                <NavLink to="/" onClick={onClickNavLink}>
                   Inicio
                 </NavLink>
               </li>
               <li
-                className={`flex items-center gap-3 ${
+                className={`flex items-center gap-3 transition-all duration-300 ease-in-out ${
                   location.pathname === "/about" ? "item__menu-active" : ""
                 }`}
               >
@@ -70,7 +63,7 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li
-                className={`flex items-center gap-3 ${
+                className={`flex items-center gap-3 transition-all duration-300 ease-in-out ${
                   location.pathname === "/projects" ? "item__menu-active" : ""
                 }`}
               >
@@ -80,7 +73,7 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li
-                className={`flex items-center gap-3 ${
+                className={`flex items-center gap-3 transition-all duration-300 ease-in-out ${
                   location.pathname === "/contact" ? "item__menu-active" : ""
                 }`}
               >
@@ -100,8 +93,8 @@ export const Header = () => {
       <button
         className={`button__menu md:hidden border-2 ${
           !showMenu
-            ? "bg-blue-700 text-white border-white"
-            : "bg-white text-blue-700 border-white"
+            ? "bg-secondary-100 text-primary-100 border-primary-100"
+            : "bg-primary-100 text-secobg-secondary-100 border-primary-100"
         }`}
         onClick={onClickShowMenu}
       >

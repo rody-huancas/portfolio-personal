@@ -7,7 +7,7 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col gap-5">
+    <footer className="flex flex-col gap-3">
       <div className="flex items-center justify-center gap-3">
         <a
           href="https://www.facebook.com/rody.huancaschuquipoma.7"
@@ -39,8 +39,15 @@ export const Footer = () => {
         </a>
       </div>
 
-      <p className="text-center">
-        Todos los derechos reservados {new Date().getFullYear()}
+      <p className="text-center text-xs">
+        &copy; {new Date().getFullYear()}{" "}
+        <a
+          href="https://github.com/rody-huancas"
+          target="_blank"
+          className="uppercase font-medium hover:underline"
+        >
+          Rody
+        </a>
       </p>
     </footer>
   );
