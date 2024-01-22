@@ -20,7 +20,7 @@
 }
 
 .item__menu-active {
-  border-left: 0.3rem solid $color_orange;
+  border-left: 0.3rem solid theme("colors.tertiary.100");
   padding-left: 0.5rem;
   transition: border-left 0.3s ease, padding-left 0.3s ease-in-out;
 }

@@ -26,7 +26,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`lg:w-96 bg__container rounded-xl py-10 px-8 shadow-lg text-white md:flex flex-col justify-between ${
+        className={`lg:w-96 bg-secondary-100 rounded-xl py-10 px-8 shadow-lg text-white md:flex flex-col justify-between ${
           showMenu ? "header__top" : "hidden"
         }`}
         style={{

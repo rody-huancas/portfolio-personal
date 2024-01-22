@@ -10,7 +10,10 @@ export const ListTechnologies = ({ technologies }: Props) => {
       {technologies.map(
         (technology, index) =>
           technology && (
-            <span key={index} className="bg__orange text-xs py-1 px-2 rounded">
+            <span
+              key={index}
+              className="bg-tertiary-100 text-xs py-1 px-2 rounded"
+            >
               {technology}
             </span>
           )

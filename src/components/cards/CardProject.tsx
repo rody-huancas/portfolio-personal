@@ -37,7 +37,7 @@ export const CardProject = ({
             <a
               href={github}
               target="_blank"
-              className="flex items-center gap-3 font-medium bg-gray-100 py-2 px-4 rounded-lg text__container border-2 border-white hover:bg-transparent hover:text-white transition-colors duration-500 ease-linear w-full lg:w-auto"
+              className="flex items-center gap-3 font-medium bg-gray-100 py-2 px-4 rounded-lg text-secondary-100 border-2 border-white hover:bg-transparent hover:text-white transition-colors duration-500 ease-linear w-full lg:w-auto"
             >
               <BsGithub /> Ver en GitHub
             </a>
@@ -47,7 +47,7 @@ export const CardProject = ({
             <a
               href={project}
               target="_blank"
-              className="flex items-center gap-3 font-medium bg-gray-100 py-2 px-4 rounded-lg text__container border-2 border-white hover:bg-transparent hover:text-white transition-colors duration-500 ease-linear w-full lg:w-auto"
+              className="flex items-center gap-3 font-medium bg-gray-100 py-2 px-4 rounded-lg text-secondary-100 border-2 border-white hover:bg-transparent hover:text-white transition-colors duration-500 ease-linear w-full lg:w-auto"
             >
               <BiLink /> Ver Demo
             </a>

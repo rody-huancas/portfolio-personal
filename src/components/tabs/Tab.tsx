@@ -20,8 +20,8 @@ export const Tab = () => {
               className={
                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                 (openTab === 1
-                  ? "text-white bg__container"
-                  : "text__container bg-white")
+                  ? "text-white bg-secondary-100"
+                  : "text-secondary-100 bg-white")
               }
               onClick={() => handleTabChange(1)}
               role="tablist"
@@ -33,8 +33,8 @@ export const Tab = () => {
               className={
                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                 (openTab === 2
-                  ? "text-white bg__container"
-                  : "text__container bg-white")
+                  ? "text-white bg-secondary-100"
+                  : "text-secondary-100 bg-white")
               }
               onClick={() => handleTabChange(2)}
               role="tablist"
@@ -46,8 +46,8 @@ export const Tab = () => {
               className={
                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                 (openTab === 3
-                  ? "text-white bg__container"
-                  : "text__container bg-white")
+                  ? "text-white bg-secondary-100"
+                  : "text-secondary-100 bg-white")
               }
               onClick={() => handleTabChange(3)}
               role="tablist"
@@ -59,8 +59,8 @@ export const Tab = () => {
               className={
                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                 (openTab === 4
-                  ? "text-white bg__container"
-                  : "text__container bg-white")
+                  ? "text-white bg-secondary-100"
+                  : "text-secondary-100 bg-white")
               }
               onClick={() => handleTabChange(4)}
               role="tablist"
@@ -72,8 +72,8 @@ export const Tab = () => {
               className={
                 "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                 (openTab === 5
-                  ? "text-white bg__container"
-                  : "text__container bg-white")
+                  ? "text-white bg-secondary-100"
+                  : "text-secondary-100 bg-white")
               }
               onClick={() => handleTabChange(5)}
               role="tablist"
@@ -82,7 +82,7 @@ export const Tab = () => {
             </button>
           </div>
 
-          <div className="flex flex-col bg__container text-white w-full mb-6 mt-5 py-5 px-2 rounded-lg shadow-md overflow-x-hidden">
+          <div className="flex flex-col bg-secondary-100 text-white w-full mb-6 mt-5 py-5 px-2 rounded-lg shadow-md overflow-x-hidden">
             <div className="px-2 py-5 flex-auto">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"}>

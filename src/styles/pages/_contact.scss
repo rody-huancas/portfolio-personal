@@ -1,22 +1,22 @@
 .input__contact {
-  border: 1px solid $color_gray;
+  border: 1px solid theme("colors.primary.200");
   padding: 0.7rem 1.3rem;
   border-radius: 1.5rem;
   font-size: 0.8rem;
   transition: border-color 0.3s ease-in-out;
 
   &:focus {
-    border-color: $color_orange;
+    border-color: theme("colors.tertiary.100");
     outline: none;
   }
 }
 
 .button__submit {
-  background-color: $color_orange;
+  background-color: theme("colors.tertiary.100");
   transform: translateY(0);
 
   &:hover {
-    background-color: $color_blue;
+    background-color: theme("colors.secondary.100");
     transform: translateY(-5px);
   }
 }

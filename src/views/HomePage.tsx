@@ -5,7 +5,7 @@ import { RiGithubFill } from "react-icons/ri";
 export const HomePage = () => {
   return (
     <>
-      <div className="relative w-full h-full bg__container p-5 md:p-0 rounded-xl flex items-center justify-center overflow-x-hidden">
+      <div className="relative w-full h-full bg-secondary-100 p-5 md:p-0 rounded-xl flex items-center justify-center overflow-x-hidden">
         <div className="overlay-bg"></div>
         <div className="flex flex-col items-start justify-center gap-7 p-5 md:px-10 lg:px-20 text-gray-100 z-40">
           <h2 className="font-extrabold text-6xl text-center md:text-left">

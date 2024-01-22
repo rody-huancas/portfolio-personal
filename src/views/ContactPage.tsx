@@ -11,21 +11,21 @@ export const ContactPage = () => {
 
         <div className="h-full flex-col md:flex-row flex sm:items-center gap-12">
           <div className="lg:h-3/4 flex flex-wrap xl:flex-col gap-8">
-            <div className="flex items-center gap-3 text-xl text__orange">
+            <div className="flex items-center gap-3 text-xl text-tertiary-100">
               <BiPhoneCall />
               <p className="flex flex-col text-base font-bold text-gray-700">
                 Celular
                 <span className="font-normal text-sm">+51 975 597 994</span>
               </p>
             </div>
-            <div className="flex items-center gap-3 text-xl text__orange">
+            <div className="flex items-center gap-3 text-xl text-tertiary-100">
               <GrMail />
               <p className="flex flex-col text-base font-bold text-gray-700">
                 Correo Electrónico
                 <span className="font-normal text-sm">huancasr9@gmail.com</span>
               </p>
             </div>
-            <div className="flex items-center gap-3 text-xl text__orange">
+            <div className="flex items-center gap-3 text-xl text-tertiary-100">
               <RiUserLocationLine />
               <p className="flex flex-col text-base font-bold text-gray-700">
                 Ubicación

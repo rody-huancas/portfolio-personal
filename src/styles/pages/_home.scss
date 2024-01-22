@@ -1,7 +1,7 @@
 .social__item {
   background-color: white;
-  color: $color_blue;
-  border: 2px solid $color_blue;
+  color: theme("colors.secondary.100");
+  border: 2px solid theme("colors.secondary.100");
   transition: all 0.5s ease;
   &:hover {
     background-color: transparent;
@@ -11,8 +11,8 @@
 }
 
 .button__cv {
-  border: 2px solid $color_orange;
-  background-color: $color_orange;
+  border: 2px solid theme("colors.tertiary.100");
+  background-color: theme("colors.tertiary.100");
   transition: all 0.5s ease;
   &:hover {
     border-color: white;
