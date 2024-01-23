@@ -23,7 +23,7 @@ export const CardProject = ({
     <div
       className={`w-full sm:w-[22rem] md:w-[18rem] lg:w-[22rem] h-52 rounded-lg shadow-lg overflow-hidden item__card relative font__poppins hovered`}
     >
-      <img src={image} alt={name} className="w-full h-full" />
+      <img src={image} alt={name} className="w-full h-full object-cover" />
 
       <div className="overlay text-white flex flex-col gap-3">
         <h3 className="font-bold text-white text-sm md:text-2xl text-center">
