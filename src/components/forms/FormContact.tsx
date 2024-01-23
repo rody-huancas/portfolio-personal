@@ -23,7 +23,7 @@ export const FormContact = () => {
 
       <button
         type="submit"
-        className="w-52 flex items-center justify-center gap-2 mb-5 sm:mb-0 bg-tertiary-100 text-white py-3 rounded-full font-medium button__submit transition-all duration-500 ease-in-out"
+        className="w-52 flex items-center justify-center gap-2 mb-5 sm:mb-0 bg-tertiary-100 text-white py-3 rounded-full font-medium button__submit transition-all duration-500 ease-in-out outline-none"
       >
         <BsFillSendFill /> Enviar Mensaje
       </button>

@@ -9,7 +9,7 @@ export const ContactPage = () => {
       <div className="h-full p-10 flex flex-col gap-5 text-gray-700 font__poppins overflow-x-hidden">
         <h2 className="font-black text-3xl title__page">Contáctame</h2>
 
-        <div className="h-full flex-col md:flex-row flex sm:items-center gap-12">
+        <div className="h-full flex-col md:flex-row flex sm:items-center gap-12 lg:px-20">
           <div className="lg:h-3/4 flex flex-wrap xl:flex-col gap-8">
             <div className="flex items-center gap-3 text-xl text-tertiary-100">
               <BiPhoneCall />
@@ -33,7 +33,8 @@ export const ContactPage = () => {
               </p>
             </div>
           </div>
-          <div>
+
+          <div className="lg:w-full">
             <FormContact />
           </div>
         </div>

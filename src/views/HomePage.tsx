@@ -13,7 +13,7 @@ export const HomePage = () => {
             <small className="text-[#ff5959]">.</small>
           </h2>
           <p className="text-lg">
-            Un desarrollador Full Stack apasionado por la tecnología. Transformo
+            Desarrollador Full Stack apasionado por la tecnología. Transformo
             ideas en realidad a través del código. ¡Bienvenido a mi portafolio!
           </p>
 

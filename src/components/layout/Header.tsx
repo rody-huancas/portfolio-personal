@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink, Link } from "react-router-dom";
 // Componentes
 import { Footer } from "./Footer";
 // Iconos
@@ -32,10 +32,10 @@ export const Header = () => {
       >
         <div>
           <div className="flex flex-col items-center gap-3">
-            <h1 className="font-extrabold uppercase text-2xl">
+            <Link to="/" className="font-extrabold uppercase text-2xl">
               Rody Huancas
               <span className="text-orange-600 font-sans text-3xl ml-1">.</span>
-            </h1>
+            </Link>
             <span className="font-medium text-xl">Desarrollador Web</span>
           </div>
 

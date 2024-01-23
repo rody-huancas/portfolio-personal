@@ -104,8 +104,8 @@ export const Tab = () => {
                 <div className={openTab === 2 ? "block" : "hidden"}>
                   <div className="grid__buttons">
                     <ButtonSkill Icon={icons.SiPhp} text="Php" />
-                    <ButtonSkill Icon={icons.FaPython} text="Python" />
-                    <ButtonSkill Icon={icons.SiDjango} text="Django" />
+                    {/* <ButtonSkill Icon={icons.FaPython} text="Python" /> */}
+                    {/* <ButtonSkill Icon={icons.SiDjango} text="Django" /> */}
                     <ButtonSkill Icon={icons.FaLaravel} text="Laravel" />
                     <ButtonSkill
                       Icon={icons.SiCodeigniter}
@@ -143,7 +143,7 @@ export const Tab = () => {
                   <div className="grid__buttons">
                     <ButtonSkill Icon={icons.BsGit} text="Git" />
                     <ButtonSkill Icon={icons.BsGithub} text="GitHub" />
-                    <ButtonSkill Icon={icons.FaDocker} text="Docker" />
+                    {/* <ButtonSkill Icon={icons.FaDocker} text="Docker" /> */}
                     <ButtonSkill Icon={icons.SiPostman} text="Postman" />
                     <ButtonSkill Icon={icons.BsTrello} text="Trello" />
                   </div>
